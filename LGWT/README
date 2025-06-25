@@ -40,6 +40,25 @@ I continue with further chapters.
 Chapter 2: Integers
 --------------------------------------------------------------------------------
 
-See the testfile for an example of a 'Testable Example'
+See the test file for an example of a 'Testable Example'
 Nothing else to note for this chapter.
+
+
+Chapter 3: Iteration
+--------------------------------------------------------------------------------
+
+- Introduction to for loops in Go, nothing unexpected there.
+- Benchmarks can be added to test files and run with `go test -bench=.`
+- See the test file for this chapter for an example benchmark
+- Strings in Go are immutable
+    - frequent string operations (like concatenation) can get quite costly
+    - strings.Builder are a massively more performant
+
+Thoughts:
+
+- Having benchmarks conveniently available is super helpful.
+- strings.Builder is massively more performant than just naive concatenation
+- It must be mutating, or partially mutating a pointer rather than copying
+  memory, as is the default case with strings
+- Will probably be worth rote memorising the strings package
 
