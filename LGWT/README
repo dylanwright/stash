@@ -6,3 +6,33 @@ https://quii.gitbook.io/learn-go-with-tests
 
 Notes and exercises while working through "Learn Go with Tests".
 
+
+Chapter 1
+--------------------------------------------------------------------------------
+
+The basic TDD loop:
+
+- write a test
+- make the compiler pass
+- run failing test and check the error message is meaningful
+- write enough code to make the test pass
+- refactor
+
+Benefits:
+
+- ensures relevant tests
+- enables refactoring with the safety of tests
+- exposes developer to error messages to ensure they are good
+- tests serve as a clear spec of what the code does
+
+Thoughts:
+
+This seems like a more structured version of how I already code. The point
+on how TDD ensures *relevant* tests (by writing them before not after), hits
+home for me.
+
+I've never thought about tests as a useful source of documentation before.
+Usually because once mocking comes into the picture, it's easy for tests
+to get complex and slightly unreadable. But I'll keep this idea in mind as
+I continue with further chapters.
+
