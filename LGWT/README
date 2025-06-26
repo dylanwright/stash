@@ -71,8 +71,26 @@ Chapter 4: Arrays and Slices
 
 Thoughts:
 
-- I'm not sure about this:
+- I'm not sure about this:this
     - "If you've been strict with TDD, you'll have close to 100% coverage"
     - Sounds sussy to me. What about side effecty code?
     - Will read on and find out
+
+Chapter 5: Structs, Methods and Interfaces
+--------------------------------------------------------------------------------
+
+- Table based tests can be a bit noisy but are good for testing the 
+  various implementations of an interface
+- Interface resolution is implicit in Go
+
+Thoughts:
+
+- The way interfaces work is kind of unusual but brilliant
+- Allows for highly specific relationships that are loosely coupled
+- It means it's possible to satisfy multiple interfaces (implicitly)
+- Functions can be highly reusable utilities 
+- It's very unix-y (not a surprise)
+- Makes testing and mocking easier
+- I'm looking forward to digging more into how to leverage this
+
 
