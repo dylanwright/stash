@@ -47,18 +47,32 @@ Nothing else to note for this chapter.
 Chapter 3: Iteration
 --------------------------------------------------------------------------------
 
-- Introduction to for loops in Go, nothing unexpected there.
 - Benchmarks can be added to test files and run with `go test -bench=.`
 - See the test file for this chapter for an example benchmark
 - Strings in Go are immutable
     - frequent string operations (like concatenation) can get quite costly
-    - strings.Builder are a massively more performant
+    - strings.Builder is massively more performant
 
 Thoughts:
 
 - Having benchmarks conveniently available is super helpful.
-- strings.Builder is massively more performant than just naive concatenation
-- It must be mutating, or partially mutating a pointer rather than copying
-  memory, as is the default case with strings
+- strings.Builder must be mutating a pointer rather than copying memory, 
+  as is the default case with strings
 - Will probably be worth rote memorising the strings package
+
+
+Chapter 4: Arrays and Slices
+--------------------------------------------------------------------------------
+
+- The goal should not be to have as many tests as possible, but rather to
+  have as much *confidence* as possible in your code base.
+- Every test has a cost
+- Go provides a nice coverage tool with `go test -cover`
+
+Thoughts:
+
+- I'm not sure about this:
+    - "If you've been strict with TDD, you'll have close to 100% coverage"
+    - Sounds sussy to me. What about side effecty code?
+    - Will read on and find out
 
