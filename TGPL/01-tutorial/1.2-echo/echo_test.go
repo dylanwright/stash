@@ -6,9 +6,7 @@ import "testing"
 // Experiment to measure the difference in running time between our potentially
 // inefficient versions and the one that uses strings.Join
 
-var input1 = []string{"a", "b", "c", "d"}
-var input2 = []string{"a", "b", "c", "d", "arg5", "arg6", "arg6", "arg7"}
-var input3 = []string{
+var input = []string{
 	"abc", "def", "ghi", "jkl", "mno", "pqr", "stu", "vwx", "yz1", "234",
 	"567", "890", "aaa", "bbb", "ccc", "ddd", "eee", "fff", "ggg", "hhh",
 	"iii", "jjj", "kkk", "lll", "mmm", "nnn", "ooo", "ppp", "qqq", "rrr",
@@ -20,8 +18,6 @@ var input3 = []string{
 	"d4e", "e5f", "f6g", "g7h", "h8i", "i9j", "j0k", "k1l", "l2m", "m3n",
 	"n4o", "o5p", "p6q", "q7r", "r8s", "s9t", "t0u", "u1v", "v2w", "w3x",
 }
-
-var input = input3
 
 // for loop
 func BenchmarkEcho1(b *testing.B) {

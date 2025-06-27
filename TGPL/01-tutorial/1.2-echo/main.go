@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	fmt.Println(ex2(os.Args))
+	fmt.Println(Echo4(os.Args))
 }
 
 // echo 1
@@ -41,7 +41,7 @@ func Echo3(args []string) string {
 // echo4 (bonus to compare strings.Builder with strings.Join)
 func Echo4(args []string) string {
 	var sb strings.Builder
-	for _, arg := range args[1:] {
+	for i, arg := range args[1:] {
 		if i > 0 {
 			sb.WriteByte(' ')
 		}
